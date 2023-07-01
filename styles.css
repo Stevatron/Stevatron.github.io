@@ -1,0 +1,174 @@
+@font-face {
+    font-family: warhammer40k;
+    src: url(Chomsky.otf);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(warhammer-background.jpg) no-repeat fixed;
+    background-size: cover;
+    overflow-x: hidden;
+    zoom: 1;
+}
+
+.box {
+    width: 450px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    font-family: warhammer40k, sans-serif;
+    margin-bottom: 10%;
+}
+
+.box-img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.box h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+
+.box h3 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+.box p {
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.box li {
+    display: inline-block;
+    margin: 6px;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.box li a {
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+    transition: all ease-in-out 250ms;
+}
+
+.box li a:hover {
+    color: #b9b9b9;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.box-2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    position: fixed;
+}
+
+#slika-1 {
+    color: white;
+    font-size: 60px;
+    transition: all ease-in-out 250ms;
+
+}
+
+#slika-1:hover {
+    color: #b9b9b9;
+}
+
+
+
+.o-meni {
+    width: 47%;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: left;
+    margin-top: 5%;
+    color: white;
+    font-family: sans-serif;
+
+}
+
+.projekti {
+    width: 47%;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: left;
+    color: white;
+    font-family: sans-serif;
+}
+
+.interests {
+    width: 47%;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: left;
+    color: white;
+    font-family: sans-serif;
+}
+
+.o-meni h2 {
+    font-family: warhammer40k;
+}
+
+.o-meni,
+.projekti,
+.interests {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+    font-size: 20px;
+}
+
+.o-meni.show,
+.projekti.show,
+.interests.show,
+.box-3.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+.box-3 {
+    width: 42%;
+    padding: 40px;
+    text-align: left;
+    margin-top: 5%;
+    color: white;
+    font-family: sans-serif;
+    font-family: warhammer40k;
+    margin-top: -26%;
+    transform: translateX(110%);
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+    font-size: 20px;
+}
+
+.box-3 p {
+    text-align: center;
+}
+
+.box-img-1 {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
